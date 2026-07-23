@@ -53,30 +53,30 @@
 
 | Teknologi | Deskripsi |
 |---|---|
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> | UI framework dengan Concurrent Features |
-| TypeScript 6 | Type safety & developer experience |
-| Vite 8 | Build tool super cepat |
-| Tailwind CSS 4 | Utility-first styling |
-| Framer Motion 12 | Animation library untuk React |
-| GSAP 3 | High-performance animation |
-| React Router 7 | Client-side routing |
-| shadcn/ui | Accessible component library |
-| Tiptap 3 | Rich text editor |
-| Axios 1 | HTTP client |
-| Phosphor Icons | SVG icon set |
+| <img src="https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAFB" alt="React" /> | UI framework dengan Concurrent Features |
+| <img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript" /> | Type safety & developer experience |
+| <img src="https://img.shields.io/badge/Vite-646CFF?style=plastic&logo=vite&logoColor=white" alt="Vite" /> | Build tool super cepat |
+| <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=plastic&logo=tailwindcss&logoColor=white" alt="Tailwind" /> | Utility-first styling |
+| <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=plastic&logo=framer&logoColor=white" alt="Framer Motion" /> | Animation library untuk React |
+| <img src="https://img.shields.io/badge/GSAP-88CE02?style=plastic&logo=greensock&logoColor=white" alt="GSAP" /> | High-performance animation |
+| <img src="https://img.shields.io/badge/React_Router-CA4245?style=plastic&logo=reactrouter&logoColor=white" alt="React Router" /> | Client-side routing |
+| <img src="https://img.shields.io/badge/shadcn/ui-000000?style=plastic&logo=shadcnui&logoColor=white" alt="shadcn/ui" /> | Accessible component library |
+| <img src="https://img.shields.io/badge/Tiptap-0D0D0D?style=plastic&logo=tiptap&logoColor=white" alt="Tiptap" /> | Rich text editor |
+| <img src="https://img.shields.io/badge/Axios-5A29E4?style=plastic&logo=axios&logoColor=white" alt="Axios" /> | HTTP client |
+| <img src="https://img.shields.io/badge/Phosphor_Icons-3C402B?style=plastic&logo=phosphoricons&logoColor=white" alt="Phosphor Icons" /> | SVG icon set |
 
 ### Backend
 
 | Teknologi | Deskripsi |
 |---|---|
-| Node.js | JavaScript runtime |
-| Express 5 | Web framework |
-| MySQL2 | Database driver (connection pool) |
-| JWT | Token-based authentication |
-| Bcrypt | Password hashing |
-| Multer | File upload handling |
-| Cors | Cross-origin resource sharing |
-| Dotenv | Environment variables |
+| <img src="https://img.shields.io/badge/Node.js-339933?style=plastic&logo=nodedotjs&logoColor=white" alt="Node.js" /> | JavaScript runtime |
+| <img src="https://img.shields.io/badge/Express-000000?style=plastic&logo=express&logoColor=white" alt="Express" /> | Web framework |
+| <img src="https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=white" alt="MySQL" /> | Database driver (connection pool) |
+| <img src="https://img.shields.io/badge/JWT-000000?style=plastic&logo=jsonwebtokens&logoColor=white" alt="JWT" /> | Token-based authentication |
+| <img src="https://img.shields.io/badge/Bcrypt-4C2E9E?style=plastic&logo=bcrypt&logoColor=white" alt="Bcrypt" /> | Password hashing |
+| <img src="https://img.shields.io/badge/Multer-FF6600?style=plastic&logo=file&logoColor=white" alt="Multer" /> | File upload handling |
+| <img src="https://img.shields.io/badge/Cors-000000?style=plastic&logo=cors&logoColor=white" alt="Cors" /> | Cross-origin resource sharing |
+| <img src="https://img.shields.io/badge/Dotenv-ECD53F?style=plastic&logo=dotenv&logoColor=black" alt="Dotenv" /> | Environment variables |
 
 ---
 
