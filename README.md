@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://himatif.itg.ac.id" target="_blank">
-    <img src="himatif-fe-new/public/logo-himatif.png" width="200" alt="HIMATIF ITG Logo" />
+  <a href="https://itg.ac.id" target="_blank">
+    <img src="himatif-fe-new/public/logo-himatif.png" width="300" alt="HIMATIF ITG Logo" />
   </a>
 </p>
 
@@ -35,6 +35,7 @@
 
 ## Fitur
 
+| | |
 |---|---|
 | Landing Page | Animasi interaktif dengan GSAP & Framer Motion |
 | Berita & Artikel | Rich text editor dengan Tiptap |
