@@ -1,11 +1,8 @@
-```
-██████╗ ██╗  ██╗██╗███╗   ███╗ █████╗ ████████╗██╗███████╗
-██╔══██╗██║  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔════╝
-██████╔╝███████║██║██╔████╔██║███████║   ██║   ██║█████╗
-██╔══██╗██╔══██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██╔══╝
-██████╔╝██║  ██║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║██║
-╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝
-```
+<p align="center">
+  <a href="https://himatif.itg.ac.id" target="_blank">
+    <img src="himatif-fe-new/public/logo-himatif.png" width="200" alt="HIMATIF ITG Logo" />
+  </a>
+</p>
 
 <p align="center">
   <strong>Himpunan Mahasiswa Teknik Informatika — Institut Teknologi Garut</strong>
@@ -14,13 +11,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=plastic&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=plastic&logo=greensock&logoColor=white" alt="GSAP" />
+  <img src="https://img.shields.io/badge/Phosphor_Icons-3C402B?style=plastic&logo=phosphoricons&logoColor=white" alt="Phosphor Icons" />
+  <img src="https://img.shields.io/badge/Tiptap-0D0D0D?style=plastic&logo=tiptap&logoColor=white" alt="Tiptap" />
+  <img src="https://img.shields.io/badge/shadcn/ui-000000?style=plastic&logo=shadcnui&logoColor=white" alt="shadcn/ui" />
 </p>
 
 ---
@@ -40,7 +35,6 @@
 
 ## Fitur
 
-| | |
 |---|---|
 | Landing Page | Animasi interaktif dengan GSAP & Framer Motion |
 | Berita & Artikel | Rich text editor dengan Tiptap |
@@ -59,7 +53,7 @@
 
 | Teknologi | Deskripsi |
 |---|---|
-| React 19 | UI framework dengan Concurrent Features |
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> | UI framework dengan Concurrent Features |
 | TypeScript 6 | Type safety & developer experience |
 | Vite 8 | Build tool super cepat |
 | Tailwind CSS 4 | Utility-first styling |
