@@ -17,10 +17,10 @@ const Pengurus = {
   },
 
   async create(data) {
-    const { nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, status, periode, divisi_id } = data;
+    const { nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, github, status, periode, divisi_id } = data;
     const [result] = await pool.query(
-      'INSERT INTO pengurus (nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, status, periode, divisi_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      [nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, status || 'aktif', periode, divisi_id]
+      'INSERT INTO pengurus (nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, github, status, periode, divisi_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      [nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, github, status || 'aktif', periode, divisi_id]
     );
     return result.insertId;
   },

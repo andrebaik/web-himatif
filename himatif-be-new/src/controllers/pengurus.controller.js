@@ -29,7 +29,7 @@ const pengurus = {
 
   async create(req, res, next) {
     try {
-      const { nama, nama_panggilan, jabatan, kutipan, instagram, linkedin, status, periode, divisi_id } = req.body;
+      const { nama, nama_panggilan, jabatan, kutipan, instagram, linkedin, github, status, periode, divisi_id } = req.body;
 
       if (!nama) {
         return res.status(400).json({ statusCode: 400, message: 'Nama is required.' });
@@ -37,7 +37,7 @@ const pengurus = {
 
       const foto = req.file ? `image/pengurus/${req.file.filename}` : null;
 
-      const id = await Pengurus.create({ nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, status, periode, divisi_id });
+      const id = await Pengurus.create({ nama, nama_panggilan, jabatan, foto, kutipan, instagram, linkedin, github, status, periode, divisi_id });
       const data = await Pengurus.getById(id);
 
       return res.status(201).json({ statusCode: 201, message: 'Pengurus created successfully.', data });

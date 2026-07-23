@@ -52,9 +52,14 @@ export default function Pengaturan() {
   const handleSave = async () => {
     setSaving(true)
     try {
+      const formatMySQL = (val: string) => {
+        if (!val) return null
+        // Input "2026-07-23T16:00" -> "2026-07-23 16:00:00"
+        return val.replace('T', ' ') + ':00'
+      }
       await updateSettingsApi({
-        registration_open: new Date(form.registration_open).toISOString(),
-        registration_close: new Date(form.registration_close).toISOString(),
+        registration_open: formatMySQL(form.registration_open),
+        registration_close: formatMySQL(form.registration_close),
         is_active: form.is_active,
       })
       await Promise.all([loadSettings(), loadStatus()])

@@ -39,6 +39,7 @@ export interface Pengurus {
   kutipan?: string
   instagram?: string
   linkedin?: string
+  github?: string
   status: 'aktif' | 'nonaktif'
   periode: string
   divisi_id?: number

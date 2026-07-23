@@ -17,7 +17,7 @@ import { assetUrl } from '@/lib/utils'
 
 const initialForm = {
   nama: '', nama_panggilan: '', jabatan: '', kutipan: '',
-  instagram: '', linkedin: '', status: 'aktif' as Pengurus['status'],
+  instagram: '', linkedin: '', github: '', status: 'aktif' as Pengurus['status'],
   periode: '', divisi_id: '',
 }
 
@@ -66,7 +66,7 @@ export default function AdminPengurus() {
     setEditing(p)
     setForm({
       nama: p.nama, nama_panggilan: p.nama_panggilan || '', jabatan: p.jabatan,
-      kutipan: p.kutipan || '', instagram: p.instagram || '', linkedin: p.linkedin || '',
+      kutipan: p.kutipan || '', instagram: p.instagram || '', linkedin: p.linkedin || '', github: p.github || '',
       status: p.status, periode: p.periode, divisi_id: p.divisi_id?.toString() || '',
     })
     setPreview(assetUrl(p.foto))
@@ -90,6 +90,7 @@ export default function AdminPengurus() {
     if (form.kutipan) fd.append('kutipan', form.kutipan)
     if (form.instagram) fd.append('instagram', form.instagram)
     if (form.linkedin) fd.append('linkedin', form.linkedin)
+    if (form.github) fd.append('github', form.github)
     fd.append('status', form.status)
     fd.append('periode', form.periode)
     if (form.divisi_id) fd.append('divisi_id', form.divisi_id)
@@ -286,14 +287,18 @@ export default function AdminPengurus() {
             <Label className="text-sm text-[#a3a3a3]">Kutipan</Label>
             <Textarea value={form.kutipan} onChange={(e) => setForm({ ...form, kutipan: e.target.value })} rows={2} className="bg-[#1a1a1a] border-[#222222]/50 rounded-xl" />
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             <div className="space-y-2">
               <Label className="text-sm text-[#a3a3a3]">Instagram</Label>
               <Input value={form.instagram} onChange={(e) => setForm({ ...form, instagram: e.target.value })} placeholder="username" className="bg-[#1a1a1a] border-[#222222]/50 rounded-xl" />
             </div>
             <div className="space-y-2">
-              <Label className="text-sm text-[#a3a3a3]">LinkedIn URL</Label>
-              <Input value={form.linkedin} onChange={(e) => setForm({ ...form, linkedin: e.target.value })} className="bg-[#1a1a1a] border-[#222222]/50 rounded-xl" />
+              <Label className="text-sm text-[#a3a3a3]">LinkedIn</Label>
+              <Input value={form.linkedin} onChange={(e) => setForm({ ...form, linkedin: e.target.value })} placeholder="https://linkedin.com/in/username" className="bg-[#1a1a1a] border-[#222222]/50 rounded-xl" />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-sm text-[#a3a3a3]">GitHub URL</Label>
+              <Input value={form.github} onChange={(e) => setForm({ ...form, github: e.target.value })} placeholder="https://github.com/username" className="bg-[#1a1a1a] border-[#222222]/50 rounded-xl" />
             </div>
           </div>
           <div className="pt-2">

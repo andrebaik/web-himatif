@@ -66,6 +66,7 @@ CREATE TABLE `pengurus` (
   `kutipan` text DEFAULT NULL,
   `instagram` varchar(255) DEFAULT NULL,
   `linkedin` varchar(255) DEFAULT NULL,
+  `github` varchar(255) DEFAULT NULL,
   `status` enum('aktif','nonaktif') DEFAULT 'aktif',
   `periode` varchar(20) DEFAULT NULL,
   `divisi_id` int(11) DEFAULT NULL,

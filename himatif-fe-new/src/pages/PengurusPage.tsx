@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { InstagramLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Dialog } from '@/components/ui/dialog'
@@ -245,7 +245,7 @@ export default function PengurusPage() {
                 </div>
               )}
 
-              {(selectedMember.instagram || selectedMember.linkedin) && (
+              {(selectedMember.instagram || selectedMember.linkedin || selectedMember.github) && (
                 <div className="flex flex-wrap gap-6 pt-6 border-t border-white/10">
                   {selectedMember.instagram && (
                     <a
@@ -262,7 +262,7 @@ export default function PengurusPage() {
                   )}
                   {selectedMember.linkedin && (
                     <a
-                      href={selectedMember.linkedin}
+                      href={selectedMember.linkedin.startsWith('http') ? selectedMember.linkedin : `https://linkedin.com/in/${selectedMember.linkedin}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2.5 text-white/90 hover:text-white transition-all duration-300"
@@ -273,10 +273,23 @@ export default function PengurusPage() {
                       <span className="text-xs font-bold tracking-wide">LinkedIn</span>
                     </a>
                   )}
+                  {selectedMember.github && (
+                    <a
+                      href={selectedMember.github.startsWith('http') ? selectedMember.github : `https://github.com/${selectedMember.github}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2.5 text-white/90 hover:text-white transition-all duration-300"
+                    >
+                      <div className="p-2.5 rounded-full bg-white/10 backdrop-blur-md hover:bg-white border border-white/5">
+                        <GithubLogo size={16} weight="fill" />
+                      </div>
+                      <span className="text-xs font-bold tracking-wide">GitHub</span>
+                    </a>
+                  )}
                 </div>
               )}
 
-              {(!selectedMember.kutipan || selectedMember.kutipan.trim() === '') && !selectedMember.instagram && !selectedMember.linkedin && (
+              {(!selectedMember.kutipan || selectedMember.kutipan.trim() === '') && !selectedMember.instagram && !selectedMember.linkedin && !selectedMember.github && (
                 <p className="text-muted-foreground text-sm">{selectedMember.nama}</p>
               )}
             </div>
